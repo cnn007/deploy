@@ -6,7 +6,7 @@ const releaseRoot    = '/root/release';
 const wwwPath        = '/root/www';
 const projects = ['api-server', 'web-admin'];
 
-const socket = require('socket.io-client')('http://test.micro-service.tsq.me');
+const socket = require('socket.io-client')('http://micro-service.demo.tsq.me');
 socket.on('connect', function(){
   console.log('socket connected');
 });
