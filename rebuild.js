@@ -69,7 +69,6 @@ module.exports = (body) => {
         `git pull origin ${branchName}`,
         'cnpm i',
         'npm run build',
-        'tar jxvf dist.tar.bz2',
         `cp -R dist ${releasePath}`,
         `rm -rf ${wwwPath}/${repoName}/dist`,
         `ln -s ${releasePath} ${wwwPath}/${repoName}/dist`
